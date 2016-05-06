@@ -1,0 +1,45 @@
+* {
+/*	border: 1px dashed #0000FF; */
+	font-family: 'Raleway' sans-serif; 
+	color: #393c3d;
+	font-size: 1em;
+}
+
+.nav a {
+	color:#5a5a5a;
+	background-color: #fff;
+    	font-weight:bold;
+	text-transform:uppercase;
+}
+
+.jumbotron {
+	height:30em;
+	background-image:url("pictures/Banner.jpg"); no-repeat center center; 
+	-webkit-background-size: 100% 100%;
+	position:relative;
+}
+
+.jumbotron canvas {
+	position: relative;
+	bottom: 3em; left: 0em; top: -3.4em; right:0em;
+}
+
+.jumbotron p {
+	font-size: 2.5em;
+	color: #fff;
+	font-weight: 350;
+	text-align: center;
+	position: relative; bottom: 6em; left: auto; right: auto;
+}
+/*
+.work-examples .FraserMap{
+	position: relative; left:-6em; right: 0em; top 0em; bottom: 0em;
+}
+
+.work-examples .Funnel_Plot{
+	position: relative; left:0em; right: 0em; top 0em; bottom: -1em; 
+}
+*/
+.publications {
+	background-color: #f7f7f7;
+}
