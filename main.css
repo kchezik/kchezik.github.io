@@ -1,5 +1,5 @@
 * {
-/*	border: 1px dashed #0000FF; */
+	/* border: 1px dashed #0000FF; */
 	font-family: 'Raleway' sans-serif; 
 	color: #393c3d;
 	font-size: 1em;
@@ -13,23 +13,25 @@
 }
 
 .jumbotron {
+	background-color:#f7f7f7;
 	height:30em;
-	background-image:url("pictures/Banner.jpg"); no-repeat center center; 
-	-webkit-background-size: 100% 100%;
+	background-image:url("pictures/Flow-Time_Banner.pdf"), url("pictures/Banner.jpg");
+	background-size: 100% 100%;
+	background-position:30% 0%;
 	position:relative;
 }
 
 .jumbotron canvas {
+	font-family: 'Raleway' sans-serif; 
 	position: relative;
 	bottom: 3em; left: 0em; top: -3.4em; right:0em;
 }
 
 .jumbotron p {
 	font-size: 2.5em;
-	color: #fff;
 	font-weight: 350;
 	text-align: center;
-	position: relative; bottom: 6em; left: auto; right: auto;
+	position: relative; bottom: 7em; left: auto; right: auto;
 }
 /*
 .work-examples .FraserMap{

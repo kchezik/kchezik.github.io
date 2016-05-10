@@ -3,9 +3,13 @@ var mahogany = [20, 100, 38];
 var green = [158, 100, 33];
 var blue = [207, 42, 63];
 var purple = [329, 31, 50];
+var cantaloupe = [41,95,70];
+var honeydew = [20,93,68];
+var strawberry = [344,93,65]
 
-var myName = "Dat Stat Vis -- Ecology | Kyle Chezik";
-var letterColors = [mahogany, amber, green, purple, blue];
+var myName = "Tangible Data|Kyle Chezik PhC"
+// var letterColors = [mahogany, amber, green, purple, blue];
+var letterColors = [cantaloupe, amber, honeydew, strawberry];
 
 // bubbleShape = "circle";
 bubbleShape = "square";

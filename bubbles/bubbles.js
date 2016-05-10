@@ -287,7 +287,7 @@ function drawName(name, letterColors) {
         g[j].curPos.y = (canvasHeight / 2 - 105 * 1.7) + g[j].curPos.y;
 	// These two lines determine where the points settle.
         g[j].originalPos.x = (canvasWidth / 2 - offset / 2 * 1.016) + g[j].originalPos.x;
-        g[j].originalPos.y = (canvasHeight / 2 - 105 * 1.1) + g[j].originalPos.y;
+        g[j].originalPos.y = (canvasHeight / 2 - 105 * 1.4) + g[j].originalPos.y;
     }
  
     pointCollection = new PointCollection();
