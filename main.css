@@ -54,24 +54,23 @@ p {
 }
 
 .research img {
-	margin: 0.5em 0em 1em 0em;
-}
-
-
-.publications {
-	background-color: #fff;
+	margin: 1.2em 0em 1em 0em;
 }
 
 #map {
-	height: 85%;
+	height: 30em;
 	width: 85%;
-	margin: 1.2em 0em 0em 0em;
 }
 
 #funnel {
 	height: 30em;
 	width: 100%;
-	margin: 1.2em 0em 0em 0em;
+}
+
+
+.publications {
+	background-color: #fff;
+	margin: 0em 0em 2em 0em;
 }
 
 .blog {
