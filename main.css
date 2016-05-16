@@ -76,5 +76,9 @@ p {
 .blog iframe {
 	border: none;
 	width: 100%;
-	height: 560px;
+	height: 38em;
+}
+.connect {
+	height: 4em;
+	width: 100%;
 }

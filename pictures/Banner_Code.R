@@ -39,7 +39,7 @@ Flow.Time = function(time, response, weight, group, alpha = 0.25, seq.inc = 0.08
 }
 
 setwd("~/Documents/CV_Transcripts_Pubs/Web_Site/pictures")
-jpeg(filename = "Flow-Time_Banner.jpg", width = 1350, height = 425, pointsize = 23, bg = "transparent")
+jpeg(filename = "Flow-Time_Banner.jpg", width = 1350, height = 425, pointsize = 23, bg = "#F7F7F7")
 
 Flow.Time(time = Y.Data$Year, response = Y.Data$Med.sc, weight = Y.Data$Area, group = Y.Data$Station.ID, xlab = "Year", ylab = expression("Scaled Median Flow (m"^3%.%"sec"^-1*")"%.%"year"^-1))
 
