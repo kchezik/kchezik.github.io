@@ -1,11 +1,16 @@
 * {
-	/* border: 1px dashed #0000FF; */
+	/*border: 1px dashed #0000FF;*/
 	font-family: 'Raleway' sans-serif; 
 	color: #393c3d;
 	font-size: 1em;
 }
+
 h3 {
 	text-decoration: underline;
+}
+
+p {
+	font-size: 1.2em;
 }
 
 .nav a {
@@ -25,43 +30,51 @@ h3 {
 }
 
 .jumbotron canvas {
-	font-family: 'Raleway' sans-serif; 
 	position: relative;
 	bottom: 3em; left: 0em; top: -3.4em; right:0em;
 }
 
 .jumbotron p {
 	font-size: 2.5em;
-	font-weight: bold;
+	font-weight: 350;
 	text-align: center;
 	position: relative; bottom: 7em; left: auto; right: auto;
 }
 
 .AboutMe p {
-	font-size: 1.2em;
 	background-color:#fff;
 }
+
 .AboutMe img {
 	margin: 0em 0em 1em 0em;
 }
-.data-visualisation {
+
+.research {
 	background-color: #f7f7f7;
 }
-.data-visualisation img {
+
+.research img {
 	margin: 0.5em 0em 1em 0em;
 }
+
 #map {
 	margin: 1.2em 0em 0em 0em;
 }
-.data-visualisation p {
-	font-size: 1.2em;
-}
+
 .publications {
 	background-color: #fff;
 }
+
 .publications img {
 	margin: 0em 0em 1em 0em;
 }
-.shiny {
+
+.blog {
 	background-color: #f7f7f7;
+}
+
+.blog iframe {
+	border: none;
+	width: 100%;
+	height: 560px;
 }
