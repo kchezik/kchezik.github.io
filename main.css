@@ -5,11 +5,6 @@
 	font-size: 1em;
 }
 
-.nav_space {
-	color: #fff;
-	height: 3.6em;
-}
-
 h3 {
 	text-decoration: underline;
 }
@@ -20,21 +15,26 @@ p {
 
 ul {
 	list-style-type: none;
+	margin:0px;
+	padding:0px;
 }
 
 .navbar {	
-	background-color: rgba(255,255,255,0.5);
+	background-color: rgba(255,255,255,0.9);
 	border-bottom: 1px solid #5a5a5a;
+	border-top: 1px solid #5a5a5a;
+	margin:0px;
+	z-index:1;
 }
 
-.nav li {
+.menu li {
 	float: left;
-	padding: 0em 2em 0em 0em;
+	padding: 0em 0em 0em 2em;
 }
 
 .share-buttons li {
-    float: right;
-    padding: 1em 2em 0em 0em;
+	float: right;
+	padding: 0.75em 2em 0em 0em;
 }
 
 .nav a {
@@ -43,18 +43,24 @@ ul {
 	text-transform:uppercase;
 }
 
+.affix {
+      top: 0;
+      width: 100%;
+}
+
 .jumbotron {
 	background-color:#f7f7f7;
-	height:35em;
+	height:30em;
 	background-image:url("pictures/Flow-Time_Banner.jpg");
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	position:relative;
+	margin: 0px;
 }
 
 .jumbotron canvas {
 	position: relative;
-	bottom: 3em; left: 0em; top: -3.4em; right:0em;
+	bottom: 0em; left: 0em; top: -3.5em; right:0em;
 }
 
 .jumbotron p {
@@ -105,6 +111,7 @@ ul {
 	width: 100%;
 	height: 38em;
 }
+
 .connect {
 	height: 4em;
 	width: 100%;
