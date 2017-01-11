@@ -27,14 +27,22 @@ ul {
 	z-index:1;
 }
 
-.menu li {
+.menu {
 	float: left;
-	padding: 0em 0em 0em 2em;
+	margin: 0em 0em 0em 4em;
+}
+
+.menu li {
+	padding: 0em 0em 0em 0em;
+}
+
+.share-buttons {
+	float: right;
+	margin: 0em 2em 0em 0em;
 }
 
 .share-buttons li {
-	float: right;
-	padding: 0.75em 2em 0em 0em;
+	padding: 0em 0.5em 0em 0em;
 }
 
 .nav a {
