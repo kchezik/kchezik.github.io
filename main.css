@@ -1,5 +1,5 @@
 * {
-	/*border: 1px dashed #0000FF;*/
+	//border: 1px dashed #0000FF;
 	font-family: 'Raleway' sans-serif; 
 	color: #393c3d;
 	font-size: 1em;
@@ -78,6 +78,10 @@ ul {
 	position: relative; bottom: 5em; left: auto; right: auto;
 }
 
+#AboutMe {
+	padding-top: 5em;
+}
+
 #AboutMe p {
 	background-color:#fff;
 }
@@ -87,7 +91,7 @@ ul {
 }
 
 #Research {
-	margin: 1em 0em 1em 0em;
+	padding-top: 5em;
 	background-color: #f7f7f7;
 }
 
@@ -110,16 +114,17 @@ ul {
 }
 
 #Publications {
+	padding-top: 5em;
 	background-color: #fff;
-	margin: 1em 0em 1em 0em;
 }
 
 #Publications img {
-	 margin: 2em 0em 1em 0em;
+	margin: 2em 0em 1em 0em;
  }
 
 #Blog {
-	margin: 1em 0em 1em 0em;
+	padding-top: 5em;
+	margin: 0em 0em 0em 0em; 
 	background-color: #f7f7f7;
 }
 
