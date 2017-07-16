@@ -6,14 +6,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="https://use.fontawesome.com/f7bfa5d837.js"></script>
 		<title>Tangible Data|Kyle Chezik PhC</title>
-		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="bubbles/alphabet.js"></script>
 		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 		<link href="main.css" rel="stylesheet" type="text/css">
 	</head>
-	<body>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 		<div class="jumbotron">
 			<canvas id="myCanvas"></canvas>
 			<script type="text/javascript" src="bubbles/bubbles.js"></script>
@@ -21,42 +21,56 @@
 			<p>Understanding Ecological Processes Through Statistics <br>
 			and Beautiful Visualizations</p>
 		</div>
-		<div class="collapse navbar-collapse">
-			<nav class="navbar" data-spy="affix" data-offset-top="423"> 
-				<ul class="nav navbar-nav menu">
-					<li class="acitive"><a href="#">Home</a></li>
-					<li><a href="#">Research & Interests</a></li>
-					<li><a href="#">Publications & CV</a></li>
-					<li><a href="#">Photos</a></li>
-					<li><a href="#">Blog & Notes</a></li>
-				</ul>
-				<ul class="nav navbar-nav share-buttons">
-					<li><a href="https://twitter.com/kchezik"
-	    target="_blank" title="Follow Me On Twitter">
-							<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
-					<li><a href="https://github.com/kchezik"
-	    target="_blank" title="Check Out My Code!">
-							<i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-					<li><a href="ca.linkedin.com/in/kchezik" target="_blank"
-					      title="Look At My Profile On LinkdIn">
-							<i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
-					<li><a href="https://scholar.google.ca/citations?user=kVMXchIAAAAJ&hl=en"
-	    target="_blank" title="Check Out My Papers On Google Scholar!">
-							<img src="pictures/scholar_icon.png" style="width:2em;height:2em;"></a></li>
-					<li><a href="https://www.researchgate.net/profile/Kyle_Chezik"
-	    target="_blank" title="Follow Me On Research Gate!">
-							<img src="pictures/RSGate_icon.png" style="width:2em;height:2em;"></a></li>
-					<li><a href="http://orcid.org/0000-0001-6986-2600"
-	    target="_blank" title="Check Out My ORCID Profile!">
-							<img src="pictures/ORCID_icon.jpg" style="width:2em;height:2em;"></a></li>
-					<li><a href="http://www.jonwmoore.org"
-	    target="_blank" title="What's The Moore Lab Up To!">
+
+		<nav class="navbar" data-spy="affix" data-offset-top="423">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav menu">
+							<li><a href="#AboutMe">Tangible Data</a></li>
+							<li><a href="#Research">Research & Interests</a></li>
+							<li><a href="#Publications">Publications & CV</a></li>
+							<li><a href="#Photos">Photos</a></li>
+							<li><a href="#Blog">Blog & Notes</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right share-buttons" >
+							<li><a href="https://twitter.com/kchezik"
+									target="_blank" title="Follow Me On Twitter">
+									<i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a></li>
+							<li><a href="https://github.com/kchezik"
+									target="_blank" title="Check Out My Code!">
+									<i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+							<li><a href="ca.linkedin.com/in/kchezik" target="_blank"
+									title="Look At My Profile On LinkdIn">
+									<i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+							<li><a href="https://scholar.google.ca/citations?user=kVMXchIAAAAJ&hl=en"
+									target="_blank" title="Check Out My Papers On Google Scholar!">
+									<img src="pictures/scholar_icon.png" style="width:2em;height:2em;"></a></li>
+							<li><a href="https://www.researchgate.net/profile/Kyle_Chezik"
+									target="_blank" title="Follow Me On Research Gate!">
+									<img src="pictures/RSGate_icon.png" style="width:2em;height:2em;"></a></li>
+							<li><a href="http://orcid.org/0000-0001-6986-2600"
+									target="_blank" title="Check Out My ORCID Profile!">
+									<img src="pictures/ORCID_icon.jpg" style="width:2em;height:2em;"></a></li>
+							<li><a href="http://www.jonwmoore.org"
+									target="_blank" title="What's The Moore Lab Up To!">
 							<img src="pictures/Moore_Lab_Icon_Cut.png"
-	    style="width:3.5em;height:2em;"></a></li>
-				</ul>	
-			</nav>
-		</div>
-		<div class="AboutMe container-fluid">
+							style="width:3.5em;height:2em;"></a></li>
+						</ul>	
+					</div>
+				</div>
+			</div>
+		</nav> 
+		<div class="container-fluid" id="AboutMe">
 			<div class="container">
 				<h3>About Me</h3>
 				<div class="col-md-7">
@@ -66,43 +80,49 @@
 				img-rounded"></div>
 			</div>
 		</div>
-		<div class="research container-fluid">
+
+		<div id="Research" class="container-fluid">
 			<div class="container">
 				<h3>Research & Interests</h3>
 				<div class="col-md-6">
-					<img src="pictures/P1_Map.jpg" class = "img-responsive" id = "map">
+					<img src="pictures/P1_Map.pdf" class = "img-responsive" id = "map">
 				</div>
 				<div class="col-md-6">
-					<img src="pictures/P2-Annual-Funnel.jpg"
-	  class = "img-responsive" id = "funnel">
+					<img src="pictures/P2-Annual-Funnel.pdf" class = "img-responsive" id = "funnel">
+				</div>
+				<div class="col-md-4">
+					<p>Beautiful visualizations...</p>
+				</div>
+				<div class="col-md-2">
+				</div>
+				<div class="col-md-6">
+						<img src="pictures/FigS9_FlowCurvesRaw.pdf" class = "img-responsive" id = "flow">
 				</div>
 			</div>
-			<div class="container">
-				<p>Beautiful visualizations...</p>
-			</div>
 		</div>
-		<div class="publications container-fluid">
+
+		<div id="Publications" class="container-fluid">
 			<div class="container">
 				<h3>Publications & Curriculum Vitae</h3>
-				<div class="col-md-4"></div>
 				<div class="col-md-4">
-					<img src="publications/Chezik et al. 2014a.jpg" 
-	  class="img-responsive img-thumbnail">
+					<img src="publications/Chezik et al. 2017.jpg" class="img-responsive img-thumbnail">
 				</div>
 				<div class="col-md-4">
-					<img src="publications/Chezik et al. 2014b.jpg" 
-	  class="img-responsive img-thumbnail">
+					<img src="publications/Chezik et al. 2014a.jpg" class="img-responsive img-thumbnail">
+				</div>
+				<div class="col-md-4">
+					<img src="publications/Chezik et al. 2014b.jpg" class="img-responsive img-thumbnail">
 				</div>
 			</div>
 		</div>
-		<div class="blog container-fluid">
+
+		<div id="Blog" class="container-fluid">
 			<div class="container">
 				<h3>Blog & Field Notes</h3>
 			</div>
 			<div class = "row">
 				<div class="col-md-8">
-					<iframe src="https://kyle-chezik.shinyapps.io/Fraser_Flow_Smoother/" frameborder:"0">
-					</iframe>
+					<iframe src="https://kyle-chezik.shinyapps.io/Fraser_Flow_Smoother/" frameborder:"0"></iframe>
 				</div>
 				<div class="col-md-4">
 					<p>Shiny plots are the best!</p>
