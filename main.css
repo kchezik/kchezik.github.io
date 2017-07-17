@@ -114,6 +114,11 @@ ul {
 	height:30em;
 }
 
+#interests {
+	 border-left: solid;
+	 border-bottom: solid;
+ }
+
 #Publications {
 	padding-top: 5em;
 	margin-bottom: 1em;
