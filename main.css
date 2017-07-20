@@ -1,6 +1,6 @@
 * {
 	//border: 1px dashed #0000FF;
-	font-family: 'Raleway' sans-serif; 
+	font-family: 'Raleway'; 
 	color: #393c3d;
 	font-size: 1em;
 }
@@ -60,7 +60,7 @@ ul {
 .jumbotron {
 	background-color:#f7f7f7;
 	height:30em;
-	background-image:url("pictures/Flow-Time_Banner.jpg");
+	background-image:url("pictures/main/Flow-Time_Banner.jpg");
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	position:relative;
@@ -74,7 +74,7 @@ ul {
 
 .jumbotron p {
 	font-size: 3.5em;
-	font-weight: 950;
+	font-weight: lighter;
 	text-align: center;
 	position: relative; bottom: 5em; left: auto; right: auto;
 }

@@ -1,7 +1,7 @@
 #library(dplyr)
 #See https://github.com/kchezik/River-Network-Flow-Trends for original data.
 load("03_Data_Annual.RData")
-
+library(tidyverse)
 Y.Data = Y.Data %>%
 	group_by(Station.ID) %>%
 	mutate(Med.sc = as.vector(scale(Median.F, center = F)),
