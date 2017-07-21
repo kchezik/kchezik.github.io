@@ -5,7 +5,7 @@
 	font-size: 1em;
 }
 
-.body {
+body {
 	position: relative;
 }
 
@@ -29,6 +29,10 @@ ul {
 	border-bottom: 1px solid;
 	border-top: 1px solid;
 	margin-bottom:0em;
+}
+
+.icon-bar {
+	background-color: #5a5a5a;
 }
 
 .affix {
@@ -80,24 +84,23 @@ ul {
 }
 
 #AboutMe {
-	padding-top: 5em;
-}
-
-#AboutMe p {
-	background-color:#fff;
-}
-
-#AboutMe img {
-	margin-bottom:1em;
+	padding-top: 7em;
+	padding-bottom: 2em;
 }
 
 #Research {
-	padding-top: 5em;
+	padding-top: 7em;
+	padding-bottom: 3em;
 	background-color: #f7f7f7;
 }
 
-#Research img {
-	margin-bottom:1em;
+#Research h3 {
+	 margin-bottom: 1.5em;
+}
+
+.caption {
+	margin-top: 1em;
+	margin-bottom: 2em;
 }
 
 #map {
@@ -120,17 +123,22 @@ ul {
  }
 
 #Publications {
-	padding-top: 5em;
-	margin-bottom: 1em;
+	padding-top: 7em;
+	margin-bottom: 2em;
 	background-color: #fff;
 }
 
 #Publications img {
 	margin-bottom:1em;
- }
+}
+
+#Publications h3 {
+	  margin-bottom: 1.5em;
+}
 
 #Notebook {
-	padding-top: 5em;
+	padding-top: 7em;
+	padding-bottom: 2em;
 	background-color: #f7f7f7;
 }
 
