@@ -24,26 +24,26 @@ ul {
 	padding:0em;
 }
 
+.affix {
+      top:0;
+      width: 100%;
+      z-index: 9999 !important;
+}
+
 .navbar {	
 	background-color: rgba(255,255,255,0.9);
 	border-bottom: 1px solid;
 	border-top: 1px solid;
-	margin-bottom:0em;
-}
-
-.icon-bar {
-	background-color: #5a5a5a;
-}
-
-.affix {
-      top:0;
-      width: 100%;
-      z-index: 9999;
+	margin-bottom: 0em;
 }
 
 .affix ~ .container-fluid {
      position: relative;
      top: 50px;
+}
+
+.icon-bar {
+	background-color: #5a5a5a;
 }
 
 .menu {
