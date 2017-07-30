@@ -24,6 +24,20 @@ ul {
 	padding:0em;
 }
 
+.button {
+    background-color: rgba(255,255,255,0.9);
+    border: solid;
+    border-width: 2px;
+    color: #393c3d;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
 .affix {
       top:0;
       width: 100%;
@@ -92,7 +106,7 @@ ul {
 #Research {
 	padding-top: 7em;
 	padding-bottom: 3em;
-	background-color: #f7f7f7;
+	background-color: rgba(247,247,247,0.9);
 }
 
 #Research h3 {
@@ -124,10 +138,32 @@ ul {
 	margin: auto;
 }
 
+.laxInt, .laxFoot {
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.laxInt {
+	margin: 2em 0em 0em 0em;
+	/* The image used */
+	background-image: url("./pictures/main/river.jpg");
+	/* Set a specific height */
+	min-height: 500px;
+}
+
 #interests {
-	 border-left: solid;
-	 border-bottom: solid;
- }
+	color:#e1e1e1;
+	background-color: rgba(94,94,94,0.4);
+	border-left: solid;
+	border-bottom: solid;
+}
+
+#interests p {
+	color:#e1e1e1;
+}
 
 #Publications {
 	padding-top: 7em;
@@ -158,4 +194,14 @@ ul {
 div.polaroid {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding:1em;
+}
+
+.laxFoot {
+	margin: 0em 0em 0em 0em;
+	/* The image used */
+	background-image: url("./pictures/main/canoe.jpg");
+	/* Set a specific height */
+	min-height: 300px;
+	background-position: bottom;
+	background-size: contain;
 }
