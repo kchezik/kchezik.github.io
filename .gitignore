@@ -1,3 +1,7 @@
 *.Rhistory
 *.vim
 Chezik Kyle 06Lr.jpg
+Icon\r
+publications/Chezik_Moore_Website_Statement.*
+makefile
+.gitignore
