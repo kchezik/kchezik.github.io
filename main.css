@@ -1,6 +1,6 @@
 * {
 	//border: 1px dashed #0000FF;
-	font-family: 'Raleway'; 
+	font-family: 'Raleway', sans-serif; 
 	color: #393c3d;
 	font-size: 1em;
 }
@@ -92,8 +92,8 @@ ul {
 }
 
 .jumbotron p {
-	font-size: 3.5em;
-	font-weight: lighter;
+	font-size: 3em;
+	font-weight: 300;
 	text-align: center;
 	position: relative; bottom: 5em; left: auto; right: auto;
 }
