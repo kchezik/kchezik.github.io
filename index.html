@@ -18,9 +18,10 @@
 	</head>
 	<body data-spy="scroll" data-target=".navbar">
 		<div class="jumbotron">
-			<canvas id="myCanvas"></canvas>
+			<canvas id="myCanvas", alin="center">
 			<script type="text/javascript" src="bubbles/bubbles.js"></script>
 			<script type="text/javascript" src="bubbles/main.js"></script>
+</canvas>
 			<p> Inference, Understanding and Action Through <br> Machine Learning, Statistics and Beautiful Visualizations </p>
 		</div>
 		<nav class="navbar navbar-default"  data-spy="affix" data-offset-top="448">
@@ -82,7 +83,49 @@
 				<div class="row">
 					<div class="col-md-6">
 						<div class="container-fluid">
-							<div class="polaroid" style="padding-bottom:4.65em">
+							<div class="polaroid" style="padding-bottom:0.25em">
+								<a href="pictures/research/HMM.jpg">
+									<img src="pictures/research/HMM.jpg" class = "img-responsive">
+								</a>
+								<div class="caption"><p><b>Cleaning Time Series with Hidden Markov Models:</b> Time series data is pervasive and messy. In my PhD work I collected river temperature data at two hour intervals for four years. If we don't consider loggers lost to the river, collecting data at this rate at over 100 sites throughout the watershed results in approximately 2 million data points. Because rivers are incredibly powerful and dynamic, temperature loggers often do not collect water temperatures year around. Rather than manually clean these data, as is tradition, I decided to develop a model that could identify errors probabilistically.</p><p>Hidden Markov Models offer the power of using information in prior time steps to estimate the current time step and a latent variable which estimates any number of 'states' that might exist which in my case is simply two (water/not water). This model also has the benefit of being unsupervised, eliminating the need for numerous labeled examples, both positive and negative.</p><p>Above is the result of applying this model to ten sites over 4 years where the yellow data points are approximated to be air temperature observations while the blue data points are expected water temperature observations. The right portion of the plot zooms in on one site and provides the probability estimates for each data point and the mean estimate for each temperature state.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="container-fluid">
+							<div class="polaroid" style="padding-bottom:1em">
+								<a href="pictures/research/HeatMap.jpg">
+									<img src="pictures/research/HeatMap.jpg" class = "img-responsive">
+								</a>
+								<hr>
+								<a href="pictures/research/HeatMapSSN.jpg">
+									<img src="pictures/research/HeatMapSSN.jpg" class = "img-responsive" id = "map">
+								</a>
+								<div class="caption"><p><b>Mapping Heat Risk:</b> Stuff about the project.</p>
+								</div>
+								<div class="caption">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="laxInt1">
+						<div class="col-md-1">
+						</div>
+						<div class="col-md-4" style="margin-top:4em" id="interests">
+							<h4>The Challenge of Dirty Data</h4>
+							<p>In my work </p>
+						</div>
+						<div class="col-md-7">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="container-fluid">
+							<div class="polaroid"  style="margin-top:2em; padding-bottom:4.7em">
 								<a href="pictures/research/P1_Map.jpg">
 									<img src="pictures/research/P1_Map.jpg" class = "img-responsive" id = "map">
 								</a>
@@ -93,7 +136,7 @@
 					</div>
 					<div class="col-md-6">
 						<div class="container-fluid">
-							<div class="polaroid">
+							<div class="polaroid" style="margin-top:2em">
 								<a href="pictures/research/P2-Annual-Funnel.jpg">
 									<img src="pictures/research/P2-Annual-Funnel.jpg" class = "img-responsive" id = "funnel">
 								</a>
@@ -105,7 +148,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="laxInt">
+					<div class="laxInt2">
 						<div class="col-md-7">
 						</div>
 						<div class="col-md-4" style="margin-top:5em" id="interests">
@@ -120,14 +163,14 @@
 					<div class="col-md-6">
 						<div class="container-fluid">
 							<div class="polaroid" style="margin-top:2em">
-								<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" 
-									codebase=";http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" height="448em" width="448em" style="margin-left:4.5em" alt="circleplot" id="circleplot">
+								<center> <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+									codebase=";http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" height="448em" width="448em" alt="circleplot" id="circleplot">
 									<param name=quality value="high">
 									<param name=movie value="pictures/main/flow2.swf">
 									<param name=wmode value="transparent">
-									<embed src="pictures/main/flow2.swf" quality="high" wmode="transparent" height="448em" width="448em" align="" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+									<embed src="pictures/main/flow2.swf" quality="high" wmode="transparent" height="448em" width="448em" align="center" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
 									</embed>
-								</object>
+								</object> </center>
 								<div class="caption">
 									<p><b>Changing Climate | Shifting Water:</b> With warming annual temperatures, places that have traditionally seen snow in the winter are increasingly shifting to rain. This change has impacts on the timing of river flow events. Visualizing these shifts are difficult in a static image but dynamic images allow us to see these changes without complex analyses or multipanel plots. I'm interested in knowing how the network might mitigate these shifts and what the impacts may be for fish either directly or indirectly via changing phenological events or shifting temperature regimes.</p>
 								</div>

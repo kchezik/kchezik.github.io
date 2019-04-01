@@ -78,17 +78,19 @@ ul {
 .jumbotron {
 	background-color:#f7f7f7;
 	height:30em;
+	background-size: cover;
 	background-image:url("pictures/main/Flow-Time_Banner.jpg");
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	position:relative;
-	margin: 0px;
+	margin: auto;
 }
 
 #myCanvas {
-	
-	position: relative;
-	bottom: 0em; left: 0em; top: -3.5em; right:0em;
+	position: relative; 
+	width: 90%;
+	margin: auto;
+	bottom: 3em;
 }
 
 .jumbotron p {
@@ -138,7 +140,7 @@ ul {
 	margin: auto;
 }
 
-.laxInt, .laxFoot {
+.laxInt1, .laxInt2,.laxFoot {
 	/* Create the parallax scrolling effect */
 	background-attachment: fixed;
 	background-position: center;
@@ -146,7 +148,15 @@ ul {
 	background-size: cover;
 }
 
-.laxInt {
+.laxInt1 {
+	margin: 2em 0em 0em 0em;
+	/* The image used */
+	background-image: url("./pictures/main/pull.JPG");
+	/* Set a specific height */
+	min-height: 500px;
+}
+
+.laxInt2 {
 	margin: 2em 0em 0em 0em;
 	/* The image used */
 	background-image: url("./pictures/main/river.JPG");
