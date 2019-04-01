@@ -151,7 +151,7 @@ ul {
 .laxInt1 {
 	margin: 2em 0em 0em 0em;
 	/* The image used */
-	background-image: url("./pictures/main/pull.JPG");
+	background-image: url("./pictures/main/pull.jpg");
 	/* Set a specific height */
 	min-height: 500px;
 }
