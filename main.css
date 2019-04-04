@@ -15,7 +15,7 @@ h3 {
 }
 
 p {
-	font-size: 1.2em;
+	font-size: 1.2vw;
 }
 
 ul {
@@ -88,7 +88,7 @@ ul {
 
 #myCanvas {
 	position: relative; 
-	width: 90%;
+	width: 95%;
 	margin: auto;
 	bottom: 3em;
 }
