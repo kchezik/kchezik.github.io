@@ -145,7 +145,6 @@ ul {
 	background-image: url("./pictures/main/river.jpg");
 	/* Set a specific height */
 	min-height: 500px;
-	background-size: cover;
 }
 
 #interests {
