@@ -88,10 +88,10 @@ ul {
 }
 
 #myCanvas {
-	position: relative; 
+	position: static; 
 	width: 95%;
 	margin: auto;
-	bottom: 3em;
+	bottom: 3vw;
 }
 
 .jumbotron p {
@@ -116,9 +116,14 @@ ul {
 	 margin-bottom: 1.5em;
 }
 
+#Research img {
+	width:100%;
+	height:auto;
+}
+
 .caption {
 	margin-top: 1em;
-	margin-bottom: 2em;
+	margin-bottom: 0.25em;
 }
 
 #map {
@@ -184,7 +189,6 @@ ul {
 
 #Publications img {
 	max-width:100%;
-	margin-bottom:1em;
 }
 
 #Publications h3 {
