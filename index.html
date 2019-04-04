@@ -44,7 +44,7 @@
 						<li><a href="#AboutMe">About Me</a></li>
 						<li><a href="#Research">DS Projects</a></li>
 						<li><a href="#Publications">Publications & Resume</a></li>
-						<li><a href="#Photos">Photos</a></li>
+						<!--<li><a href="#Photos">Photos</a></li>-->
 						<li><a href="#Notebook">Notebook</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right share-buttons" >
@@ -56,20 +56,20 @@
 								<i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
 						<li><a href="https://scholar.google.ca/citations?user=kVMXchIAAAAJ&hl=en"
 	     title="Check Out My Papers On Google Scholar!">
-								<img src="pictures/icons/scholar_icon.png" style="width:2em;height:2em;"></a></li>
+								<img src="pictures/icons/scholar_icon.png"></a></li>
 						<li><a href="https://www.researchgate.net/profile/Kyle_Chezik" title="Follow Me On Research Gate!">
-								<img src="pictures/icons/RSGate_icon.png" style="width:2em;height:2em;"></a></li>
+								<img src="pictures/icons/RSGate_icon.png"></a></li>
 						<li><a href="http://orcid.org/0000-0001-6986-2600" title="Check Out My ORCID Profile!">
-								<img src="pictures/icons/ORCID_icon.jpg" style="width:2em;height:2em;"></a></li>
+								<img src="pictures/icons/ORCID_icon.jpg"></a></li>
 						<li><a href="http://www.jonwmoore.org" title="What's The Moore Lab Up To?">
-								<img src="pictures/icons/Moore_Lab_Icon_Cut.png" style="width:3.5em;height:2em;"></a></li>
+								<img src="pictures/icons/Moore_Lab_Icon_Cut.png" style="width:3.5em"></a></li>
 					</ul>
 				</div>
 			</div>
 		</nav> 
 		<div id="AboutMe" class="container-fluid">
 			<div class="container">
-				<h3>About Me</h3>
+				<h1>About Me</h1>
 				<div class="content col-md-7">
 					<p>I'm a data scientist interested in exploring ideas and solving challenging problems with data. In January of 2019 I received my PhD from the Department of Biological Sciences at Simon Fraser University studying river networks and climate change. My research revealed river network structure controls patterns of climate change impacts on river ecosystems.</p>
 					<p>Working at spatial scales the size of the United Kingdom and over time periods spanning decades, I've become adept at gathering, munging and integrating high volume data of various types and building models of inferences.</p>
@@ -83,13 +83,11 @@
 
 		<div id="Research" class="container-fluid">
 			<div class="container">
-				<h3>Data Science Projects</h3>
+				<h1>Data Science Projects</h1>
 			</div>
-			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-6">
-						<div class="container-fluid">
-							<div class="polaroid" style="padding-bottom:4.95em">
+							<div class="polaroid">
 								<a href="pictures/research/HMM.jpg">
 									<img src="pictures/research/HMM.jpg" class = "img-responsive">
 								</a>
@@ -98,10 +96,8 @@
 									<p>The figure above uses a Hidden Markov Model to separate air and water temperature observations. On the left I've plotted data for ten sites over 4 years. The yellow data are believed by the model to be in the air state while the blue data are expected water temperature observations. The right portion of the plot zooms in on one site and provides the probability estimates for each data point and the mean estimate for each temperature state.</p>
 								</div>
 							</div>
-						</div>
 					</div>
 					<div class="col-md-6">
-						<div class="container-fluid">
 							<div class="polaroid">
 								<a href="pictures/research/HeatMap.jpg">
 									<img src="pictures/research/HeatMap.jpg" class = "img-responsive">
@@ -111,12 +107,9 @@
 								</div>
 								<hr>
 								<a href="pictures/research/HeatMapSSN.jpg">
-									<img src="pictures/research/HeatMapSSN.jpg" class = "img-responsive" id = "map">
+									<img src="pictures/research/HeatMapSSN.jpg" class = "img-responsive">
 								</a>
-								<div class="caption">
-								</div>
 							</div>
-						</div>
 					</div>
 				</div>
 				<div class="row">
@@ -134,34 +127,31 @@
 				</div>
 				<div class="row">
 					<div class="col-md-6">
-						<div class="container-fluid">
-							<div class="polaroid"  style="margin-top:2em; padding-bottom:1.75em">
+							<div class="polaroid">
 								<a href="pictures/research/P1_Map.jpg">
-									<img src="pictures/research/P1_Map.jpg" class = "img-responsive" id = "map">
+									<img src="pictures/research/P1_Map.jpg" class = "img-responsive">
 								</a>
-								<div class="caption"><p><b>Mapping Space and Time:</b> Maps make understanding space intuitive but conveying time is a bit tricky. Here placing points that describe the location and contributing area of hydro-gauge stations in the Fraser River basin is rather simple. By delineating and coloring the basin by the changing annual air temperature and precipitation we can also describe the shifting climate. This helps understand how different basins are integrating different varieties of changing climate that then impact stream flow.</p>
+								<div class="caption">
+									<p><b>Mapping Space and Time:</b> Maps make understanding space intuitive but conveying time is a bit tricky. Here placing points that describe the location and contributing area of hydro-gauge stations in the Fraser River basin is rather simple. By delineating and coloring the basin by the changing annual air temperature and precipitation we can also describe the shifting climate. This helps understand how different basins are integrating different varieties of changing climate that then impact stream flow.</p>
 								</div>
 							</div>
-						</div>
 					</div>
 					<div class="col-md-6">
-						<div class="container-fluid">
-							<div class="polaroid" style="margin-top:2em">
+							<div class="polaroid">
 								<a href="pictures/research/P2-Annual-Funnel.jpg">
-									<img src="pictures/research/P2-Annual-Funnel.jpg" class = "img-responsive" id = "funnel">
+									<img src="pictures/research/P2-Annual-Funnel.jpg" class = "img-responsive">
 								</a>
 								<div class="caption">
 									<p><b>A Rivers Portfolio Effect... With Certainty:</b> Here is one simple way to describe how river networks attenuate changing flow regimes. The colored dots represent the degree of climate complexity integrated by a given catchment. The blue line is the observed attenuation and the red/yellow lines describe what we might expect if the attenuation where to occur by random chance. These random chance lines demonstrate that what we observed would be unlikely to occur randomly. Overal we show how flow trend variability decreases as watershed size and climate trend complexity increases. The pattern is rather simple but the data is rich!</p>
 								</div>
 							</div>
-						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="laxInt2">
 						<div class="col-md-7">
 						</div>
-						<div class="col-md-4" style="margin-top:5em" id="interests">
+						<div class="col-md-4" style="margin-top:4em" id="interests">
 							<h4>Beautiful visualizations are important to understanding large and complex data.</h4>
 							<p>In my work I aim to succinctly describe data in a way that is appealing to the eye, thereby engaging the audience. Engagement is the key to understanding and if the image is beautiful you can include more information without overwhelming and exhausting the viewer. <br><br> The figures found in this section are a few examples of my attempts to make simple and intuitive big ideas that leverage huge amounts of information.</p>
 						</div>
@@ -171,10 +161,9 @@
 				</div>
 				<div class="row">
 					<div class="col-md-6">
-						<div class="container-fluid">
-							<div class="polaroid" style="margin-top:2em">
+							<div class="polaroid">
 								<center> <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
-									codebase=";http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" height="522em" width="522em" alt="circleplot" id="circleplot">
+									codebase=";http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" height="522em" width="522em" alt="circleplot">
 									<param name=quality value="high">
 									<param name=movie value="pictures/main/flow2.swf">
 									<param name=wmode value="transparent">
@@ -185,11 +174,9 @@
 									<p><b>Changing Climate | Shifting Water:</b> With warming annual temperatures, places that have traditionally seen snow in the winter are increasingly shifting to rain. This change has impacts on the timing of river flow events. Visualizing these shifts are difficult in a static image but dynamic images allow us to see these changes without complex analyses or multi-panel plots. I'm interested in knowing how the network might mitigate these shifts and what the impacts may be for fish either directly or indirectly via changing phenological events or shifting temperature regimes.</p>
 								</div>
 							</div>
-						</div>
 					</div>
 					<div class="col-md-6">
-						<div class="container-fluid">
-							<div class="polaroid" style="margin-top:2em">
+							<div class="polaroid">
 								<a href="pictures/research/Arrival_Dist.jpg">
 									<img src="pictures/research/Arrival_Dist.jpg" class = "img-responsive" id = "flow">
 								</a>
@@ -198,14 +185,12 @@
 								</div>
 							</div>
 						</div>
-					</div>
 				</div>
-			</div>
 		</div>
 
 		<div id="Publications" class="container-fluid">
 			<div class="container">
-				<h3>Publications & Resume</h3>
+				<h1>Publications & Resume</h1>
 				<div class="row">
 					<div class="col-md-4">
 						<a href="publications/Chezik_2017.pdf">
@@ -243,7 +228,7 @@
 
 		<div id="Notebook" class="container-fluid">
 			<div class="container">
-				<h3>Project Notebook</h3>
+				<h1>Project Notebook</h1>
 			</div>
 			<div class="container-fluid">
 				<div class="w3-row">
