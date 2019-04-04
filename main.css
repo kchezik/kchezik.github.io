@@ -7,6 +7,18 @@
 
 body {
 	position: relative;
+
+}
+
+.jumbotron {
+	background-color:#f7f7f7;
+	height:30em;
+	background-size: cover;
+	background-image:url("pictures/main/Flow-Time_Banner.jpg");
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	position:static;
+	margin: auto;
 }
 
 h3 {
@@ -15,7 +27,7 @@ h3 {
 }
 
 p {
-	font-size: 1.2vw;
+	font-size: 1.2em;
 }
 
 ul {
@@ -75,17 +87,6 @@ ul {
 	text-transform:uppercase;
 }
 
-.jumbotron {
-	background-color:#f7f7f7;
-	height:30em;
-	background-size: cover;
-	background-image:url("pictures/main/Flow-Time_Banner.jpg");
-	background-repeat: no-repeat;
-	background-position: center bottom;
-	position:relative;
-	margin: auto;
-}
-
 #myCanvas {
 	position: relative; 
 	width: 95%;
@@ -94,10 +95,10 @@ ul {
 }
 
 .jumbotron p {
-	font-size: 3em;
+	font-size: 3vw;
 	font-weight: 300;
 	text-align: center;
-	position: relative; bottom: 5em; left: auto; right: auto;
+	position: relative; bottom: 5em;
 }
 
 #AboutMe {
@@ -182,6 +183,7 @@ ul {
 }
 
 #Publications img {
+	max-width:100%;
 	margin-bottom:1em;
 }
 
