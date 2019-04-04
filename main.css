@@ -127,7 +127,8 @@ ul {
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	//background-size: cover;
+	background-size: contain;
 }
 
 .laxInt1 {
@@ -144,6 +145,7 @@ ul {
 	background-image: url("./pictures/main/river.jpg");
 	/* Set a specific height */
 	min-height: 500px;
+	background-size: cover;
 }
 
 #interests {
@@ -206,4 +208,10 @@ ul {
 	min-height: 300px;
 	background-position: bottom;
 	background-size: contain;
+}
+
+@media screen (max-width: 600px) {
+	.col-md-6 {
+		width: 100%;
+	}
 }
