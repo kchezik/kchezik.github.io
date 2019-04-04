@@ -7,7 +7,6 @@
 
 body {
 	position: relative;
-
 }
 
 .jumbotron {
@@ -110,7 +109,7 @@ ul {
 
 #Research {
 	padding-top: 7em;
-	padding-bottom: 1em;
+	padding-bottom: 0.5em;
 	background-color: rgba(247,247,247,0.9);
 }
 
@@ -132,7 +131,7 @@ ul {
 }
 
 .laxInt1 {
-	margin: 1em 0em 1em 0em;
+	margin: 0.5em 0em 0.5em 0em;
 	/* The image used */
 	background-image: url("./pictures/main/pull.JPG");
 	/* Set a specific height */
@@ -140,7 +139,7 @@ ul {
 }
 
 .laxInt2 {
-	margin: 1em 0em 1em 0em;
+	margin: 0.5em 0em 0.5em 0em;
 	/* The image used */
 	background-image: url("./pictures/main/river.JPG");
 	/* Set a specific height */
@@ -181,7 +180,14 @@ ul {
 }
 
 .row {
-	display:flex;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+
+}
+
+.col-md-6 {
+	margin: 0.5em 0em 0.5em 0em;
 }
 
 .polaroid {
