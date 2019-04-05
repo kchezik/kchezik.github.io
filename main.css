@@ -20,11 +20,11 @@ body {
 	margin: 0em 0em 0em 0em;
 }
 
-//#myCanvas {
-//	position: inherit; 
-//	width: 100%;
-//	margin: auto;
-//}
+#myCanvas {
+	position: static; 
+	width: 100%;
+	margin: auto;
+}
 
 .jumbotron h1 {
 	font-family: 'Raleway', sans-serif; 
@@ -37,7 +37,7 @@ body {
 	font-size: 3vw;
 	font-weight: 300;
 	text-align: center;
-	position: relative; bottom: 1em;
+	position: relative; bottom: 6em;
 }
 
 h1 {
@@ -122,7 +122,7 @@ ul {
 
 #Research img {
 	width:100%;
-	height:cover;
+	height:auto;
 }
 
 .caption {
