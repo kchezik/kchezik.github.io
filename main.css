@@ -135,7 +135,7 @@ ul {
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	height: auto;
 }
 
@@ -222,11 +222,4 @@ ul {
 	.col-md-6 {
 		width: 100%;
 	}
-	.laxInt1 {
-		-moz-background-size: auto;
-		-webkit-background-size: auto;
-		background-attachment: scroll;
-		background-position: top;
-		background-size: auto;
-   }
 }
