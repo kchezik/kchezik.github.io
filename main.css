@@ -136,6 +136,7 @@ ul {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	height: auto;
 }
 
 .laxInt1 {
@@ -222,9 +223,10 @@ ul {
 		width: 100%;
 	}
 	.laxInt1 {
+		-moz-background-size: auto;
+		-webkit-background-size: auto;
 		background-attachment: scroll;
-	}
-	.laxInt2 {
-		background-attachment: scroll;
-	}
+		background-position: top;
+		background-size: auto;
+   }
 }
