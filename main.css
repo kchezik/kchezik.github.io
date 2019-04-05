@@ -128,8 +128,7 @@ ul {
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	//background-size: cover;
-	background-size: contain;
+	background-size: cover;
 }
 
 .laxInt1 {
@@ -153,6 +152,7 @@ ul {
 	background-color: rgba(94,94,94,0.4);
 	border-left: solid;
 	border-bottom: solid;
+	padding-top: 1em;
 }
 
 #interests p {
@@ -166,7 +166,7 @@ ul {
 }
 
 #Publications img {
-	max-width:100%;
+	max-width:98%;
 }
 
 #Notebook {
@@ -185,7 +185,6 @@ ul {
   display: flex;
   display: -webkit-flex;
   flex-wrap: wrap;
-
 }
 
 .col-md-6 {
