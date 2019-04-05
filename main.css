@@ -147,6 +147,7 @@ ul {
 }
 
 .laxInt2 {
+	border: 1px dashed #0000FF;
 	margin: 0.5em 0em 0.5em 0em;
 	/* The image used */
 	background-image: url("./pictures/main/river.jpg");
@@ -219,5 +220,11 @@ ul {
 @media screen (max-width: 600px) {
 	.col-md-6 {
 		width: 100%;
+	}
+	.laxInt1 {
+		background-attachment: scroll;
+	}
+	.laxInt2 {
+		background-attachment: scroll;
 	}
 }
