@@ -1,3 +1,5 @@
+canvas = $("#myCanvas");
+
 var amber = [43,74,49];
 var mahogany = [20,100,38];
 var green = [158,100,33];

@@ -240,70 +240,84 @@ function update() {
 function drawName(name, letterColors) {
     updateCanvasDimensions();
     var g = [];
-    var offset = 0;
+    
+    var fontSizeMultiplier = 0.55;
+    var fontHeightMultiplier = fontSizeMultiplier + 0.25;
+    
+    // START AT ZERO: Track the local coordinates of the letters first
+    var textBlockWidth = 0;
+    var hexphrase = phraseToHex(name);
  
     function addLetter(cc_hex, ix, letterCols) {
         if (typeof letterCols !== 'undefined') {
-            if (Object.prototype.toString.call(letterCols) === '[object Array]' && Object.prototype.toString.call(letterCols[0]) === '[object Array]') {
+            if (Object.prototype.toString.call(letterCols) === '[object Array]' && Object.prototype.toString.call(letterCols) === '[object Array]') {
                 letterColors = letterCols;
             }
-            if (Object.prototype.toString.call(letterCols) === '[object Array]' && typeof letterCols[0] === "number") {
+            if (Object.prototype.toString.call(letterCols) === '[object Array]' && typeof letterCols === "number") {
                 letterColors = [letterCols];
             }
         } else {
-            // if undefined set black
-            letterColors = [[0, 0, 27]];
+            letterColors = [];
         }
  
         if (document.alphabet.hasOwnProperty(cc_hex)) {
-
-	    // size modifier: 1 equals the same, 2 is double, 0.5 is half the original size.
-	    var fontSizeMultiplier = 0.55;
-
-	    var chr_data = document.alphabet[cc_hex].P;
+            var chr_data = document.alphabet[cc_hex].P;
             var bc = letterColors[ix % letterColors.length];
  
             for (var i = 0; i < chr_data.length; ++i) {
-                point = chr_data[i];
+                var point = chr_data[i];
  
+                // Create points starting at 0 horizontally
                 g.push(
-		    // multiplication of x and y coordinates by defined value
-		    new Point(point[0] * fontSizeMultiplier + offset,
-                    point[1] * (fontSizeMultiplier + 0.25),
-
-                    0.0,
-                    point[2] * (fontSizeMultiplier + 0.7),
-                    makeColor(bc, point[3])));
+                    new Point(
+                        point[0] * fontSizeMultiplier + textBlockWidth,
+                        point[1] * fontHeightMultiplier,
+                        0.0,
+                        point[2] * (fontSizeMultiplier + 0.7),
+                        makeColor(bc, point[3])
+                    )
+                );
             }
-	    // multiplication of letter width by our multiplier
-            offset += document.alphabet[cc_hex].W * fontSizeMultiplier;
+            textBlockWidth += document.alphabet[cc_hex].W * fontSizeMultiplier;
         }
     }
- 
-    var hexphrase = phraseToHex(name);
  
     var col_ix = -1;
     for (var i = 0; i < hexphrase.length; i += 2) {
         var cc_hex = "A" + hexphrase.charAt(i) + hexphrase.charAt(i + 1);
         if (cc_hex != "A20") {
             col_ix++;
+            addLetter(cc_hex, col_ix, letterColors);
+        } else {
+            textBlockWidth += 20 * fontSizeMultiplier; 
         }
-        addLetter(cc_hex, col_ix, letterColors);
     }
  
+    // --- CALCULATE PERFECT CENTER BOUNDS ---
+    var estimatedTextHeight = 105 * fontHeightMultiplier; 
+    var startX = (canvasWidth - textBlockWidth) / 2;
+    var startY = ((canvasHeight - estimatedTextHeight) / 2) - (canvasHeight * 0.25);
+
+    // --- APPLY TRANSFORMATION ONCE ---
     for (var j = 0; j < g.length; j++) {
-	// These two lines determine where the points first appear.
-        g[j].curPos.x = (canvasWidth / 2 - offset / 2 * 1.016) + g[j].curPos.x;
-        g[j].curPos.y = (canvasHeight / 2 - 105 * 1.7) + g[j].curPos.y;
-	// These two lines determine where the points settle.
-        g[j].originalPos.x = (canvasWidth / 2 - offset / 2 * 1.016) + g[j].originalPos.x;
-        g[j].originalPos.y = (canvasHeight / 2 - 105 * 1.4) + g[j].originalPos.y;
+        // Map original tracking targets directly to the screen layout space
+        g[j].originalPos.x += startX;
+        g[j].originalPos.y += startY;
+
+        // Reset real-time interactive tracking grids
+        g[j].targetPos.x = g[j].originalPos.x;
+        g[j].targetPos.y = g[j].originalPos.y;
+
+        // Visual drop-in effect coordinates on page initialization 
+        g[j].curPos.x = (canvasWidth / 2) + (g[j].originalPos.x - canvasWidth / 2) * 1.016;
+        g[j].curPos.y = (canvasHeight / 2 - 105 * 1.7) + (g[j].originalPos.y - canvasHeight / 2);
     }
  
     pointCollection = new PointCollection();
     pointCollection.points = g;
     initEventListeners();
 }
+
  
 window.reset = false;
  
