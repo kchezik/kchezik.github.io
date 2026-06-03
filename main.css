@@ -28,6 +28,12 @@ body {
 
 #myCanvas {
 	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	pointer-events: auto; /* Allows users to click buttons/text through the canvas*/
 }
 
 .jumbotron h1 {

@@ -1,3 +1,5 @@
+canvas = $("#myCanvas");
+
 var amber = [43,74,49];
 var mahogany = [20,100,38];
 var green = [158,100,33];
@@ -12,15 +14,16 @@ var bluish = [225,55,55]
 var greenish = [162,70,45]
 var yellowish= [50,80,62]
 
-var myName = "Kyle Chezik PhD"
+window.currentNameString = "Kyle Chezik PhD"
+window.currentColorsArray = [orange, bluish, greenish, yellowish];
 // var letterColors = [mahogany, amber, green, purple, blue];
-//var letterColors = [cantaloupe, amber, honeydew, strawberry];
-var letterColors = [orange, bluish, greenish, yellowish];
+// var letterColors = [cantaloupe, amber, honeydew, strawberry];
+// var letterColors = [orange, bluish, greenish, yellowish];
 // var letterColors = [black];
 
 bubbleShape = "circle";
 // bubbleShape = "square";
 
 
-drawName(myName, letterColors);
+drawName(window.currentNameString, window.currentColorsArray);
 bounceBubbles()
