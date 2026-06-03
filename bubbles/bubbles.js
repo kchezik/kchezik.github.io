@@ -140,26 +140,6 @@ function phraseToHex(phrase) {
     }
     return hexphrase;
 }
- 
-/*function initEventListeners() {
-    // Re-trigger drawName on resize so positions recalculate to the new width/height
-    $(window).bind('resize', function() {
-        if (typeof currentNameString !== 'undefined') {
-            drawName(currentNameString, currentColorsArray);
-        } else {
-            updateCanvasDimensions();
-        }
-    }).bind('mousemove', onMove);
- 
-    canvas.ontouchmove = function (e) {
-        e.preventDefault();
-        onTouchMove(e);
-    };
- 
-    canvas.ontouchstart = function (e) {
-        e.preventDefault();
-    };
-} */
 
 function initEventListeners() {
     $(window).bind('resize', function() {
