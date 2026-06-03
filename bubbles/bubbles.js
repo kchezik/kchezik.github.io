@@ -275,7 +275,7 @@ function drawName(name, letterColors) {
                 letterColors = [letterCols];
             }
         } else {
-            letterColors = [];
+            letterColors = [[0, 0, 27]];
         }
  
         if (document.alphabet.hasOwnProperty(cc_hex)) {
