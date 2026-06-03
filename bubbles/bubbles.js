@@ -142,7 +142,14 @@ function phraseToHex(phrase) {
 }
  
 function initEventListeners() {
-    $(window).bind('resize', updateCanvasDimensions).bind('mousemove', onMove);
+    // Re-trigger drawName on resize so positions recalculate to the new width/height
+    $(window).bind('resize', function() {
+        if (typeof currentNameString !== 'undefined') {
+            drawName(currentNameString, currentColorsArray);
+        } else {
+            updateCanvasDimensions();
+        }
+    }).bind('mousemove', onMove);
  
     canvas.ontouchmove = function (e) {
         e.preventDefault();
@@ -155,11 +162,14 @@ function initEventListeners() {
 }
  
 function updateCanvasDimensions() {
+    // Find the parent element (the jumbotron)
+    var parent = canvas.parent();
+    
     canvas.attr({
-	// change height and width to desired values
-        height: 420,
-        width: 1357
+        height: parent.innerHeight(),
+        width: parent.innerWidth()
     });
+    
     canvasWidth = canvas.width();
     canvasHeight = canvas.height();
     draw();
