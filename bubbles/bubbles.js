@@ -275,6 +275,7 @@ function drawName(name, letterColors) {
                 letterColors = [letterCols];
             }
         } else {
+	    // if undefined set black
             letterColors = [[0, 0, 27]];
         }
  
