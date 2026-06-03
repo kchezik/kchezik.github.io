@@ -141,7 +141,7 @@ function phraseToHex(phrase) {
     return hexphrase;
 }
  
-function initEventListeners() {
+/*function initEventListeners() {
     // Re-trigger drawName on resize so positions recalculate to the new width/height
     $(window).bind('resize', function() {
         if (typeof currentNameString !== 'undefined') {
@@ -159,7 +159,38 @@ function initEventListeners() {
     canvas.ontouchstart = function (e) {
         e.preventDefault();
     };
+} */
+
+function initEventListeners() {
+    $(window).bind('resize', function() {
+        // 1. Wipe out existing bubble points immediately to halt the physics engine loop
+        if (typeof pointCollection !== 'undefined' && pointCollection) {
+            pointCollection.points = [];
+        }
+        
+        // 2. Clear the canvas completely so old visual paths are instantly deleted
+        if (typeof ctx !== 'undefined' && ctx && typeof canvasWidth !== 'undefined') {
+            ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+        }
+    
+        // 3. Recalculate dynamic boundaries and rebuild the font matrix mapping cleanly
+        if (typeof currentNameString !== 'undefined') {
+            drawName(currentNameString, currentColorsArray);
+        } else {
+            updateCanvasDimensions();
+        }
+    }).bind('mousemove', onMove);
+
+    canvas.ontouchmove = function (e) {
+        e.preventDefault();
+        onTouchMove(e);
+    };
+ 
+    canvas.ontouchstart = function (e) {
+        e.preventDefault();
+    };
 }
+
  
 function updateCanvasDimensions() {
     // Find the parent element (the jumbotron)
@@ -241,7 +272,14 @@ function drawName(name, letterColors) {
     updateCanvasDimensions();
     var g = [];
     
-    var fontSizeMultiplier = 0.55;
+    // --- DYNAMIC SCALING MODIFIER ---
+    // Calculates a fluid scale factor based on screen width
+    // Ensures a baseline around 0.55 on wide desktops, but scales down cleanly on mobile
+    var fontSizeMultiplier = Math.min(0.55, canvasWidth / 2400); 
+    
+    // Fallback limit so text never gets too microscopic on tiny screens
+    if (fontSizeMultiplier < 0.25) fontSizeMultiplier = 0.25;
+
     var fontHeightMultiplier = fontSizeMultiplier + 0.25;
     
     // START AT ZERO: Track the local coordinates of the letters first

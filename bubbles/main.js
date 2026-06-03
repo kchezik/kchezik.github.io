@@ -15,14 +15,15 @@ var greenish = [162,70,45]
 var yellowish= [50,80,62]
 
 window.currentNameString = "Kyle Chezik PhD"
+window.currentColorsArray = [orange, bluish, greenish, yellowish];
 // var letterColors = [mahogany, amber, green, purple, blue];
-//var letterColors = [cantaloupe, amber, honeydew, strawberry];
-var letterColors = [orange, bluish, greenish, yellowish];
+// var letterColors = [cantaloupe, amber, honeydew, strawberry];
+// var letterColors = [orange, bluish, greenish, yellowish];
 // var letterColors = [black];
 
 bubbleShape = "circle";
 // bubbleShape = "square";
 
 
-drawName(window.currentNameString, letterColors);
+drawName(window.currentNameString, window.currentColorsArray);
 bounceBubbles()
