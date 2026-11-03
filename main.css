@@ -26,6 +26,20 @@ body {
 	margin: 0em 0em 0em 0em;
 }
 
+.jumbotron::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(247, 247, 247, 0.25);
+	backdrop-filter: blur(1.25px);
+	-webkit-backdrop-filter: blur(1.25px);
+	z-index: 0;
+	pointer-events: none;
+}
+
 #myCanvas {
 	position: absolute;
 	top: 0;
@@ -48,7 +62,19 @@ body {
 	z-index: 2; /* Keeps text above the bubbles */
 	pointer-events: none; /* Allows mouse interactions to pass through to the canvas */
 	font-size: 3vw;
+	font-weight: 300;
 	bottom: -1.5em;
+	text-shadow:
+		0 0 8px rgba(247, 247, 247, 0.95),
+		0 0 16px rgba(247, 247, 247, 0.9),
+		0 1px 2px rgba(255, 255, 255, 1);
+}
+
+.subtitle-pillars {
+	font-size: 0.62em;
+	font-weight: 300;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
 }
 
 h1 {
@@ -227,7 +253,7 @@ ul {
 	background-size: contain;
 }
 
-@media screen (max-width: 600px) {
+@media screen and (max-width: 600px) {
 	.col-md-6 {
 		width: 100%;
 	}
